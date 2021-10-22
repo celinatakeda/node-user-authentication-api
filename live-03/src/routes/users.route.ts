@@ -1,5 +1,6 @@
 import  {Router, Request, Response, NextFunction } from "express";
 import { StatusCodes} from 'http-status-codes';
+import jwteAthenticationMiddleware from "../middlewares/jwt-authentication.middleware";
 import userRepository from "../repositories/user.repository";
 
 const usersRoute = Router();

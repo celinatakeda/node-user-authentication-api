@@ -23,8 +23,10 @@ authorizationRoute.post('/token', basicAuthenticationMiddleware, async(req: Requ
         res.status(StatusCodes.OK).json({ token: jwt });
     }catch (error) {
         next(error);
-    }    
+    }   
     
 });
+
+
 
 export default authorizationRoute;
